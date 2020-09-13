@@ -9,7 +9,7 @@ services:
     environment:
       - "discovery.type=single-node"
       - "cluster.name=personium-cluster"
-      - "network.host=0.0.0.0"
+      - "network.host=ec2-3-137-157-204.us-east-2.compute.amazonaws.com"
       - "action.auto_create_index=.watches,.triggered_watches,.watcher-history-*"
       - "http.cors.enabled=true"
       - "http.cors.allow-origin=*"
