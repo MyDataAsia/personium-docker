@@ -9,7 +9,7 @@ services:
     environment:
       - "discovery.type=single-node"
       - "cluster.name=personium-cluster"
-      - "network.host=0.0.0.0"
+      - "network.host=3.137.157.204"
       - "action.auto_create_index=.watches,.triggered_watches,.watcher-history-*"
       - "http.cors.enabled=true"
       - "http.cors.allow-origin=*"
@@ -19,7 +19,7 @@ services:
     networks:
       - backend
     healthcheck:
-      test: ["CMD-SHELL", "curl --fail localhost:9200/_cat/health?h=status | grep green || exit 1"]
+      test: ["CMD-SHELL", "curl --fail 3.137.157.204:9200/_cat/health?h=status | grep green || exit 1"]
       interval: 30s
       timeout: 30s
       retries: 10
@@ -32,7 +32,7 @@ services:
     networks:
       - mq
     healthcheck:
-      test: ["CMD-SHELL", "curl --silent --fail localhost:8161 || exit 1"]
+      test: ["CMD-SHELL", "curl --silent --fail 3.137.157.204:8161 || exit 1"]
       interval: 30s
       timeout: 30s
       retries: 10
@@ -49,7 +49,7 @@ services:
       - elasticsearch
       - activemq
     healthcheck:
-      test: ["CMD-SHELL", "curl --silent --fail localhost:8080/personium-core || exit 1"]
+      test: ["CMD-SHELL", "curl --silent --fail 3.137.157.204:8080/personium-core || exit 1"]
       interval: 30s
       timeout: 30s
       retries: 10

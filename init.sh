@@ -19,7 +19,7 @@
 # Initial setup script of Unitadmin cell
 
 # Environmental setting
-DOMAIN=localhost
+DOMAIN=3.137.157.204
 MASTER_TOKEN=personiumio
 CELL_NAME=unitadmin
 ROLE_UA_NAME=UnitAdmin

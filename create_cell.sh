@@ -27,7 +27,7 @@ UNITADMIN_CELL_URL=$(sed -n 's|^unitadmin_cell_url=||p' ${ADMIN_FILE})
 UNITADMIN_ACCOUNT=$(sed -n 's|^unitadmin_account=||p' ${ADMIN_FILE})
 UNITADMIN_PASSWORD=$(sed -n 's|^unitadmin_password=||p' ${ADMIN_FILE})
 
-ROOT_URL=http://localhost/
+ROOT_URL=http://3.137.157.204/
 CELL_NAME="$1"
 CELL_URL="${ROOT_URL}${CELL_NAME}/"
 
