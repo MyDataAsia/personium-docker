@@ -19,7 +19,7 @@
 # Initial setup script of Unitadmin cell
 
 # Environmental setting
-DOMAIN=3.137.157.204
+DOMAIN=ec2-3-137-157-204.us-east-2.compute.amazonaws.com
 MASTER_TOKEN=personiumio
 CELL_NAME=unitadmin
 ROLE_UA_NAME=UnitAdmin
